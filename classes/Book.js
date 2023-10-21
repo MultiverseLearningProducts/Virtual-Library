@@ -18,6 +18,10 @@ class Book extends Media {
     }
     return temporary;
   }
+
+  summary() {
+    return `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating}`;
+  }
 }
 // don't change below
 module.exports = Book;
