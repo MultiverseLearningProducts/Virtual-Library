@@ -1,5 +1,7 @@
 // import the Media class:
+let Media = require("./Media");
 
+// create your Book class:
 class Book extends Media {
   constructor(title, year, genre, author, numPages, rating) {
     super(title, year, genre);
@@ -8,16 +10,20 @@ class Book extends Media {
     this.rating = rating;
   }
   static highestRating(books) {
-    let temporary = 0;
-    for (const book in books) {
-      if (book.rating >= temporary) {
-        temporary = book.rating;
+    let temporary = undefined;
+
+    for (const bookItem of books) {
+      if (temporary == undefined || bookItem.rating >= temporary.rating) {
+        temporary = bookItem;
       }
     }
+
     return temporary;
   }
-}
-// create your Book class:
 
+  summary() {
+    return `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating}`;
+  }
+}
 // don't change below
 module.exports = Book;

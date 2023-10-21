@@ -23,19 +23,19 @@ class Media {
 }
 
 // demonstrating initial value of media count
-console.log("Media.totalMediaCount: ", Media.totalMediaCount);
+// console.log("Media.totalMediaCount: ", Media.totalMediaCount);
 
 // adding a piece of media
-const book = new Media("Cool Piece of Media", 2023, "Fiction");
-console.log("book:", book);
-console.log("Media.totalMediaCount: ", Media.totalMediaCount);
+// const book = new Media("Cool Piece of Media", 2023, "Fiction");
+// console.log("book:", book);
+// console.log("Media.totalMediaCount: ", Media.totalMediaCount);
 
 // adding another piece of media
-const music = new Media("Abbey Road", 1969, "Rock");
-console.log("music:", music);
-console.log("Media.totalMediaCount: ", Media.totalMediaCount);
+// const music = new Media("Abbey Road", 1969, "Rock");
+// console.log("music:", music);
+// console.log("Media.totalMediaCount: ", Media.totalMediaCount);
 
 // summary demonstration
-console.log("music.summary():", music.summary());
+// console.log("music.summary():", music.summary());
 
 module.exports = Media;

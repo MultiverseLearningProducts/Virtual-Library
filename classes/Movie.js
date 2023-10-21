@@ -1,5 +1,5 @@
 // import the Media class:
-
+let Media = require("./Media");
 // create your Movie class:
 class Movie extends Media {
   constructor(title, year, genre, director, duration, rating) {
@@ -10,13 +10,17 @@ class Movie extends Media {
   }
 
   static longestMovie(collection) {
-    let temporary = 0;
-    for (const movie in collection) {
-      if (movie.duration >= temporary) {
-        temporary = movie.duration;
+    let temporary = undefined;
+    for (const movie of collection) {
+      if (temporary == undefined || movie.duration >= temporary.duration) {
+        temporary = movie;
       }
     }
     return temporary;
+  }
+
+  summary() {
+    return `Title: ${this.title}, Director: ${this.director}, Year: ${this.year}, Genre: ${this.genre}, Rating: ${this.rating}`;
   }
 }
 
