@@ -18,6 +18,10 @@ class Movie extends Media {
     }
     return temporary;
   }
+
+  summary() {
+    return `Title: ${this.title}, Director: ${this.director}, Year: ${this.year}, Genre: ${this.genre}, Rating: ${this.rating}`;
+  }
 }
 
 // don't change below
