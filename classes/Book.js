@@ -7,8 +7,14 @@ class Book extends Media {
     this.numPages = numPages;
     this.rating = rating;
   }
-  highestRating(books) {
-    return;
+  static highestRating(books) {
+    let temporary = 0;
+    for (const book in books) {
+      if (book.rating >= temporary) {
+        temporary = book.rating;
+      }
+    }
+    return temporary;
   }
 }
 // create your Book class:
