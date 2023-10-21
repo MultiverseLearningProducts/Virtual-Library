@@ -10,12 +10,14 @@ class Book extends Media {
     this.rating = rating;
   }
   static highestRating(books) {
-    let temporary = 0;
-    for (const book in books) {
-      if (book.rating >= temporary) {
-        temporary = book.rating;
+    let temporary = undefined;
+
+    for (const bookItem of books) {
+      if (temporary == undefined || bookItem.rating >= temporary.rating) {
+        temporary = bookItem;
       }
     }
+
     return temporary;
   }
 
