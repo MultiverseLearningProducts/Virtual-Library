@@ -17,6 +17,10 @@ class Music extends Media {
     }
     return temporary;
   }
+
+  summary() {
+    return `Title: ${this.title}, Artist: ${this.artist}, Year: ${this.year}, Genre: ${this.genre}, Length: ${this.length} seconds`;
+  }
 }
 // don't change below
 module.exports = Music;
