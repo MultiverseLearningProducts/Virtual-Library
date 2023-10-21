@@ -10,10 +10,10 @@ class Movie extends Media {
   }
 
   static longestMovie(collection) {
-    let temporary = 0;
-    for (const movie in collection) {
-      if (movie.duration >= temporary) {
-        temporary = movie.duration;
+    let temporary = undefined;
+    for (const movie of collection) {
+      if (temporary == undefined || movie.duration >= temporary.duration) {
+        temporary = movie;
       }
     }
     return temporary;
