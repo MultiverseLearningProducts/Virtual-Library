@@ -80,7 +80,7 @@ describe("Book Tests", () => {
       281,
       4.4
     );
-    expect(Book.calculateAverageRating(book1)).toBe(4.4);
+    expect(Book.calculateAverageRating([book1])).toBe(4.4);
   });
 
   test("Book has calculateAverageRating for 2 books", () => {
@@ -100,6 +100,6 @@ describe("Book Tests", () => {
       206,
       4.6
     );
-    expect(Book.calculateAverageRating(book1, book2)).toBe(4.5);
+    expect(Book.calculateAverageRating([book1, book2])).toBe(4.5);
   });
 });

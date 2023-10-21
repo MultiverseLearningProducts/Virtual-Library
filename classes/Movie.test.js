@@ -72,7 +72,7 @@ describe("Movie tests", () => {
       281,
       4.4
     );
-    expect(Movie.calculateAverageRating(movie1)).toBe(4.4);
+    expect(Movie.calculateAverageRating([movie1])).toBe(4.4);
   });
 
   test("Movie has calculateAverageRating for 2 movies", () => {
@@ -92,6 +92,6 @@ describe("Movie tests", () => {
       175,
       4.7
     );
-    expect(Movie.calculateAverageRating(movie1, movie2)).toBe(4.6);
+    expect(Movie.calculateAverageRating([movie1, movie2])).toBe(4.6);
   });
 });
