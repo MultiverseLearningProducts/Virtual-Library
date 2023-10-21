@@ -1,5 +1,5 @@
 // import the Media class:
-
+let Media = require("./Media");
 // create your Movie class:
 class Movie extends Media {
   constructor(title, year, genre, director, duration, rating) {

@@ -1,5 +1,5 @@
 // import the Media class:
-
+let Media = require("./Media");
 // create your Music class:
 class Music extends Media {
   constructor(title, year, genre, artist, length) {
