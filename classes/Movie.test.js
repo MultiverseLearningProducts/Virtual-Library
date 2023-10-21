@@ -64,7 +64,7 @@ describe("Movie tests", () => {
   });
 
   test("Movie has calculateAverageRating for 1 movie", () => {
-    const movie1 = new Book(
+    const movie1 = new Movie(
       "To Kill a Mockingbird",
       1960,
       "Fiction",
