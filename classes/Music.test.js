@@ -1,5 +1,5 @@
-const Music = require('./Music')
-const Media = require('./Media')
+const Music = require('/Users/jamiemcfaull/Virtual-Library/classes/Music.js')
+const Media = require('/Users/jamiemcfaull/Virtual-Library/classes/Media.js')
 
 describe('Music tests', () => {
   test('Can create a new Book instance that is child of Media', () => {

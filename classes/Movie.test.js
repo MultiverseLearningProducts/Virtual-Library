@@ -1,5 +1,6 @@
-const Movie = require('./Movie')
-const Media = require('./Media')
+const Movie = require('/Users/jamiemcfaull/Virtual-Library/classes/Movie.js')
+const Media = require('/Users/jamiemcfaull/Virtual-Library/classes/Media.js')
+
 
 describe('Movie tests', () => {
   test('Can create a new Movie instance that is child of Media', () => {

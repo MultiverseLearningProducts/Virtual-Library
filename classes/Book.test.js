@@ -1,5 +1,5 @@
-const Book = require('./Book')
-const Media = require('./Media')
+const Book = require('/Users/jamiemcfaull/Virtual-Library/classes/Book.js')
+const Media = require('/Users/jamiemcfaull/Virtual-Library/classes/Media.js')
 
 describe('Book Tests', () => {
   test('Can create a new Book instance that is child of Media', () => {
