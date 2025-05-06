@@ -15,6 +15,11 @@ class Movie extends Media{
     static longestMovie(arr){
             return arr.reduce((max,current)=> (current.duration > max.duration ? current:max)) 
     }
+
+    static calculateAverageRating(arr) {
+
+        return arr.reduce((acc, movie) => acc + movie.rating, 0) / arr.length;
+    }
 }
 // don't change below
 module.exports = Movie;
