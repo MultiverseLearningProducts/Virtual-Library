@@ -29,8 +29,7 @@ const movie1 = new Movie(
     50
   )
 
-  let arr = [movie1, movie2, movie3]
-
-console.log(Movie.calculateAverageRating(arr))
+const music1 = new Music('Lemonade', 2016, 'R&B', 'Beyonce', 3949)
+console.log(Media.ALL_MEDIA)
 
 
