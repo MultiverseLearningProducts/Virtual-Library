@@ -22,6 +22,7 @@ class Music extends Media {
 
         return shortestAlbum;
     }
+
 }
 
 

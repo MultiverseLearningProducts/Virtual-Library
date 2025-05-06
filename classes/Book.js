@@ -16,6 +16,13 @@ class Book extends Media {
     static highestRating(arr) {
         return arr.sort((a , b) => b.rating - a.rating)[0]
     }
+
+    static calculateAverageRating(arr) {
+
+        const arr_ratings = arr.map((book) => book.rating);
+        return (arr_ratings.reduce((acc, rating) => acc + rating), 0) / arr_ratings.length;
+    
+    }
 }
 
 // don't change below
