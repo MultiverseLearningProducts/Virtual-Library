@@ -24,5 +24,6 @@ class Music extends Media {
     }
 }
 
+
 // don't change below
 module.exports = Music;
